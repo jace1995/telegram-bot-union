@@ -1,0 +1,11 @@
+/node_modules
+/docker
+/src/test.ts
+
+*.env
+
+.DS_Store
+yarn*
+*.lock
+
+errors.txt

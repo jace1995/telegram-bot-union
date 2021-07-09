@@ -1,0 +1,32 @@
+{
+  "name": "telegram-bot-union",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "docker": "docker-compose up -d",
+    "dev": "nodemon src/index.ts --exec ts-node",
+    "prod": "pm2 start npm --name alpha -- start",
+    "setup": "ts-node src/setup/setup.ts",
+    "test": "ts-node src/test.ts"
+  },
+  "dependencies": {
+    "@jace1995/load-config": "^0.2.5",
+    "@jace1995/microservice": "^0.0.2",
+    "@jace1995/postgres-helpers": "^0.1.60",
+    "@jace1995/telegram-handler": "^0.1.89",
+    "excel4node": "^1.7.2",
+    "telegraf": "3.38.0",
+    "ts-enum-util": "4.0.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.12",
+    "@types/forever-monitor": "^1.7.5",
+    "@types/mocha": "^8.0.3",
+    "chai": "^4.2.0",
+    "forever-monitor": "^3.0.1",
+    "mocha": "^8.1.3",
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  }
+}
